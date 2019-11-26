@@ -1,0 +1,187 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #444;
+  background-color: #fff;
+  @include r(479) {
+    margin-top: 0 !important;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+svg {
+  overflow: hidden;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+}
+::-ms-clear {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 25px;
+
+  @include r(1239) {
+    max-width: 1024px;
+  }
+
+  @include r(1023) {
+    max-width: 768px;
+    padding: 0 10px;
+  }
+
+  @include r(767) {
+    max-width: 640px;
+  }
+
+  @include r(639) {
+    max-width: 480px;
+  }
+
+  @include r(479) {
+    max-width: 100%;
+  }
+}
+
+.title {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-align: center;
+
+  @include r(1239) {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  @include r(1023) {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  @include r(767) {
+    font-size: 32px;
+  }
+
+  @include r(639) {
+    font-size: 29px;
+  }
+
+  @include r(479) {
+    font-size: 26px;
+  }
+}
+
+.text-bold,
+b {
+  font-weight: 700;
+}
+
+.text-black {
+  font-weight: 900;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+select:-moz-focusring,
+a:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+*:focus,
+*:visited,
+*:active,
+*:hover {
+  outline: 0 !important;
+}
+
+a,
+a:focus,
+a:visited,
+a:active,
+a:hover {
+  outline: 0 !important;
+}
+
+*::-moz-focus-inner {
+  border: 0;
+  outline: none;
+}
+
+.product--color {
+  color: #f1a583;
+}
+
+.btn {
+  padding: 9px 15px 9px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-image: linear-gradient(
+    to right,
+    #81a413 0%,
+    #9abf25 51%,
+    #81a413 100%
+  );
+  font-size: 27px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  width: 100%;
+  box-shadow: 0px 5px 0px #79971a;
+	margin-bottom: 5px;
+	transition: 0.2s;
+	cursor: pointer;
+  &__info {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+  }
+  &:hover {
+    box-shadow: none;
+  }
+}
+::-webkit-input-placeholder {
+  color: rgba(102, 102, 102, 0.67);
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+::-moz-placeholder {
+  color: rgba(102, 102, 102, 0.67);
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+:-ms-input-placeholder {
+  color: rgba(102, 102, 102, 0.67) !important;
+  font-family: "Roboto" !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+::placeholder {
+  color: rgba(102, 102, 102, 0.67);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
