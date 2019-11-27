@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center center;
     position: relative;
-    z-index: -15;
+    z-index: 1;
     padding: 83px 0px;
 
     &:before {
@@ -14,7 +14,7 @@
         background: url(../img/leaves-left.png );
         width: 601px;
         height: 584px;
-        z-index: -20;
+        z-index: 0;
     }
 
     &:after {
@@ -25,13 +25,13 @@
         background: url(../img/leaves-right.png );
         width: 481px;
         height: 490px;
-        z-index: -20;
+        z-index: 0;
     }
 
     &-image {
         position: absolute;
         left: -202px;
-        top: 226px;
+        top: 144px;
 
         &-sm {
             display: none;
@@ -51,7 +51,7 @@
             font-size: 18px;
             color: #444444;
             line-height: 1.556;
-            margin-right: 38px;
+            margin-right: 28px;
 
             &-text {
                 margin-bottom: 28px;
@@ -123,6 +123,12 @@
                 top: 226px;
             }
         }
+    }
+}
+
+@media screen and (max-width:1400px) and (min-width:1023px) {
+    .doctor {
+        overflow-y: hidden;
     }
 }
 
