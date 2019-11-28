@@ -1,1 +1,1 @@
-// include ../components/examp/examp.js
+// =include ../components/preview/postDate.js

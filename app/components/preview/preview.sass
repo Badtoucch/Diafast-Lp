@@ -1,0 +1,335 @@
+.preview
+	padding-top: 50px
+	+r(1023)
+		padding: 40px 0
+	+r(767)
+		padding: 30px 0
+	+r(479)
+		padding: 25px 0
+	&-content
+		display: flex
+		justify-content: flex-end
+		position: relative
+		z-index: 5
+		+r(1023)
+			flex-wrap: wrap
+			justify-content: center
+			align-items: center
+	&-text
+		max-width: 384px
+		margin-right: 50px
+		width: 100%
+		+r(1239)
+			margin-right: 30px
+			max-width: 335px
+		+r(1023)
+			max-width: 100%
+			order: 1
+			margin-bottom: 15px
+			margin-right: 0
+	&__title
+		text-align: left
+		font-weight: 900
+		font-size: 55px
+		+r(1239)
+			font-size: 42px
+		+r(1023)
+			text-align: center
+			font-size: 36px
+		+r(767)
+			font-size: 32px
+		+r(639)
+			font-size: 29px
+		+r(479)
+			font-size: 26px
+	&__subtitle
+		margin-top: 12px
+		color: #333333
+		font-size: 24px
+		font-weight: 400
+		line-height: 30px
+		+r(1239)
+			margin-top: 10px
+			font-size: 22px
+			line-height: normal
+			br
+				display: none
+		+r(1023)
+			text-align: center
+			font-size: 20px
+		+r(767)
+			font-size: 18px
+			margin-top: 5px
+		+r(479)
+			font-size: 17px
+		&--bold
+			font-weight: 700
+			color: #000
+	&-list
+		margin-top: 26px
+		position: relative
+		padding-top: 30px
+		+r(1239)
+			margin-top: 20px
+			padding-top: 24px
+		+r(1023)
+			display: flex
+			margin-top: 10px
+			padding-top: 14px
+		+r(767)
+			display: block
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 55px
+			height: 4px
+			background-color: #f0931e
+			transition: .2s
+			+r(1023)
+				left: 50%
+				transform: translateX(-50%)
+		&__item
+			color: #000000
+			font-size: 22px
+			font-weight: 400
+			line-height: 26px
+			padding-left: 69px
+			position: relative
+			+r(1239)
+				font-size: 20px
+				line-height: normal
+				padding-left: 55px
+				max-width: 320px
+			+r(1023)
+				font-size: 17px
+				flex: 1
+			+r(767)
+				max-width: 300px
+				padding-left: 40px
+				display: block
+				margin-right: auto
+				margin-left: auto
+				br
+					display: none
+			&:not(:last-child)
+				margin-bottom: 21px
+				+r(1239)
+					margin-bottom: 17px
+				+r(1023)
+					margin-bottom: 10px
+					margin-right: 5px
+				+r(767)
+					margin-bottom: 17px
+					margin-right: auto
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 40px
+				height: 40px
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.05)
+				background: url(../img/icon-check.svg) no-repeat center #81a413
+				border: 5px solid #fff
+				border-radius: 50%
+				+r(1239)
+					width: 35px
+					height: 35px
+					border-width: 4px
+				+r(767)
+					width: 25px
+					height: 25px
+					border-width: 3px
+					background-size: 18px
+					top: 50%
+					transform: translateY(-50%)
+	&-property
+		display: flex
+		align-items: center
+		margin-top: 25px
+		position: relative
+		margin-bottom: -47px
+		+r(1239)
+			margin-bottom: -40px
+		+r(1023)
+			display: none
+		&__approved
+			margin-right: 22px
+	&-box
+		+r(1023)
+			order: 3
+		&-pack
+			display: flex
+			align-items: flex-end
+			+r(1023)
+				order: 2
+	&__pack
+		position: relative
+		margin-bottom: -57px
+		margin-right: -40px
+		+r(1023)
+			margin-bottom: 0
+			max-width: 420px
+		+r(767)
+			max-width: 360px
+		+r(639)
+			margin-bottom: 20px
+			margin-top: 10px
+		+r(479)
+			margin-right: -55px
+	&-bg
+		position: relative
+		z-index: 0
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			transform: translateX(-96%)
+			bottom: 0
+			background: url(../img/preview-bg.png) no-repeat center
+			height: 255px
+			width: 1030px
+			z-index: 1
+			+r(1023)
+				display: none
+		&::after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-130%)
+			background: url(../img/preview-man.png) no-repeat center
+			width: 549px
+			height: 618px
+			z-index: 2
+			+r(1239)
+				background-size: contain
+				width: 424px
+				height: 478px
+			+r(1023)
+				display: none
+
+.form
+	box-shadow: 0 0 35px rgba(134, 147, 162, 0.25)
+	border-radius: 10px
+	background-color: #ffffff
+	width: 270px
+	padding: 10px 10px 20px
+	&-head
+		background-color: #f2f7fb
+		padding: 25px 11px 10px
+		text-align: center
+		border-radius: 10px 10px 0 0
+		position: relative
+		margin-bottom: 18px
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			bottom: -18px
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 19px 125px 0 125px
+			border-color: #f2f7fb transparent transparent transparent
+	&__title
+		color: #000000
+		font-size: 28px
+		font-weight: 700
+		line-height: 1
+	&__data
+		color: #000000
+		font-size: 18px
+		font-weight: 500
+		line-height: 1
+		margin-top: 8px
+	&__price
+		color: #ed8026
+		font-size: 22px
+		font-weight: 700
+		line-height: 1
+		margin-top: 5px
+	&__lastpack
+		margin-top: 34px
+		text-align: center
+		color: #000000
+		font-size: 16px
+		font-weight: 500
+		line-height: 1
+	&-input
+		max-width: 220px
+		margin: 15px auto 0
+		&-wrap
+			position: relative
+			margin-bottom: 15px
+			&--name
+				&:hover .form__name, &:focus .form__name
+					fill: orange
+			&--phone
+				&:hover .form__phone, &:focus .form__phone
+					fill: orange
+	&__icon
+		position: absolute
+		left: 20px
+		top: 50%
+		transform: translateY(-50%)
+		fill: #ed8026
+	&__input
+		box-shadow: inset 2px 3px 5px rgba(34, 35, 39, 0.09)
+		border-radius: 5px
+		border: 1px solid #dedddd
+		background-color: #ffffff
+		width: 100%
+		padding-left: 52px
+		height: 58px
+		padding-right: 10px
+		transition: 0.2s
+		&:hover, &:focus
+			box-shadow: 0 3px 7px 0 rgba(0,0,0,.15) inset
+	&__info
+		opacity: 0.7
+		color: #1f1f1f
+		font-size: 15px
+		line-height: 1
+		text-align: center
+		margin-top: 13px
+	&__lock
+		color: #403737
+		font-family: Roboto
+		font-size: 15px
+		font-weight: 400
+		line-height: 1
+		display: flex
+		align-items: center
+		margin-top: 20px
+		justify-content: center
+		&:before
+			margin-right: 14px
+			content: ''
+			display: inline-block
+			background: url(../img/lock.svg)
+			width: 22px
+			height: 24px	
+
+.lastpack
+	color: #81a413
+
+.pack
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: -56px
+		left: -65px
+		width: 99px
+		height: 99px
+		background: url(../img/billet.png) no-repeat center
+		+r(1239)
+			top: -76px
+			left: -10px
+		+r(639)
+			display: none
+
+
