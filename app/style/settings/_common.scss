@@ -71,6 +71,22 @@ button {
   line-height: 1;
   color: #000;
   text-align: center;
+  &--bg {
+		position: relative;
+		z-index: 0;
+    &::before {
+			content: '';
+      position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -45%);
+      width: 102%;
+      height: 91%;
+      border-radius: 5px;
+			background-color: #c9d7e6;
+			z-index: -1;
+    }
+  }
 
   @include r(1239) {
     font-size: 42px;
@@ -155,9 +171,9 @@ a:hover {
   line-height: 1;
   width: 100%;
   box-shadow: 0px 5px 0px #79971a;
-	margin-bottom: 5px;
-	transition: 0.2s;
-	cursor: pointer;
+  margin-bottom: 5px;
+  transition: 0.2s;
+  cursor: pointer;
   &__info {
     color: #ffffff;
     font-size: 20px;
@@ -200,18 +216,20 @@ a:hover {
   color: $accent-color;
 }
 
-.orange{
-	color: #ed8026
+.orange {
+  color: #ed8026;
 }
 
-.leaves{
-  background: url(../img/leaves-left.png) no-repeat 0 -90px, url(../img/leaves-right.png) no-repeat 100% 46px, linear-gradient(to left, #bfd0e2 0%, #f6f7f9 50%, #bfd0e2 100%);
+.leaves {
+  background: url(../img/leaves-left.png) no-repeat 0 -90px,
+    url(../img/leaves-right.png) no-repeat 100% 46px,
+    linear-gradient(to left, #bfd0e2 0%, #f6f7f9 50%, #bfd0e2 100%);
 
-	@include r(767) {
+  @include r(767) {
     background: linear-gradient(to left, #bfd0e2 0%, #f6f7f9 50%, #bfd0e2 100%);
   }
 }
 
-.color--red{
-	color: #ff3333
+.color--red {
+  color: #ff3333;
 }

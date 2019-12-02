@@ -1,0 +1,247 @@
+.statistics
+	padding: 88px 0
+	+r(1239)
+		padding: 60px 0
+	.title
+		br
+			+r(479)
+				display: none
+	&__subtitle
+		margin-top: 17px
+		text-align: center
+		color: #333333
+		font-size: 22px
+		font-weight: 500
+		line-height: 1
+		padding-bottom: 42px
+		border-bottom: 1px solid #a8bdd2
+		+r(1239)
+			font-size: 21px
+			margin-top: 15px
+			padding-bottom: 35px
+		+r(1023)
+			font-size: 19px
+			margin-top: 10px
+			padding-bottom: 25px
+		+r(767)
+			font-size: 18px
+			padding-bottom: 15px
+	&-content
+		margin-top: 45px
+		display: flex
+		justify-content: space-between
+		+r(1239)
+			margin-top: 35px
+		+r(1023)
+			margin-top: 25px
+		+r(767)
+			margin-top: 15px
+			flex-direction: column
+		&__title
+			margin-top: 49px
+			color: #444444
+			font-size: 24px
+			font-weight: 400
+			line-height: 1
+			text-align: center
+			+r(1239)
+				margin-top: 35px
+				font-size: 22px
+			+r(1023)
+				margin-top: 25px
+				font-size: 20px
+			+r(767)
+				margin-top: 15px
+				font-size: 19px
+			b
+				color: #000
+		&-box
+			width: 33%
+			display: flex
+			flex-direction: column
+			align-items: center
+			+r(767)
+				width: 100%
+				flex-direction: row
+				justify-content: center
+			+r(479)
+				flex-direction: column
+				text-align: center
+			&:nth-child(2)
+				position: relative
+				+r(479)
+					margin: 10px 0
+				&:before, &::after
+					content: ''
+					position: absolute
+					top: 22px
+					width: 1px
+					height: 199px
+					background-color: #a8bdd2
+					+r(1239)
+						height: 185px
+					+r(767)
+						display: none
+				&::before
+					left: 0
+				&::after
+					right: 0
+		&__img
+			min-height: 110px
+			+r(767)
+				min-height: auto
+				margin-right: 20px
+			+r(639)
+				margin-right: 10px
+		&__rule
+			color: #000000
+			font-size: 22px
+			font-weight: 500
+			line-height: 1
+			text-align: center
+			margin-top: 12px
+			+r(1239)
+				margin-top: 10px
+				font-size: 20px
+			+r(1023)
+				font-size: 17px
+				margin-top: 5px
+			+r(767)
+				margin-top: 0
+		&__percent
+			margin-top: 11px
+			color: #f55858
+			font-size: 80px
+			font-weight: 700
+			line-height: 1
+			+r(1239)
+				margin-top: 9px
+				font-size: 70px
+			+r(1023)
+				font-size: 60px
+				margin-top: 5px
+			+r(767)
+				font-size: 45px
+			&--size
+				font-size: 44px
+				font-weight: 300
+				+r(1239)
+					font-size: 37px
+				+r(767)
+					font-size: 31px
+		&__pack
+			max-width: 162px
+			margin-top: 11px
+			+r(479)
+				margin-top: 0
+		&__pack1
+			position: relative
+			margin-right: -20px
+		&__apple
+			position: relative
+			margin-left: -41px
+			width: 64px
+	&__title
+		margin-top: 40px
+		color: #000000
+		font-size: 30px
+		font-weight: 700
+		line-height: 1
+		text-align: center
+		+r(1239)
+			margin-top: 35px
+			font-size: 28px
+		+r(1023)
+			font-size: 25px
+			margin-top: 25px
+		+r(767)
+			font-size: 22px
+			margin-top: 20px
+		+r(479)
+			br
+				display: none
+	&-cert
+		display: flex
+		justify-content: center
+		margin-top: 33px
+		position: relative
+		z-index: 0
+		+r(1239)
+			margin-top: 30px
+		+r(1023)
+			margin-top: 22px
+		+r(767)
+			margin-top: 18px
+		+r(639)
+			flex-wrap: wrap
+			margin-top: 12px
+		&::before
+			content: ''
+			position: absolute
+			top: 50px
+			left: 0
+			width: 100%
+			height: 185px
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.1)
+			border-radius: 10px
+			background-color: #ffffff
+			z-index: -1
+			+r(767)
+				height: 158px
+			+r(639)
+				display: none
+		&__item
+			padding: 15px 15px 0 15px
+			+r(767)
+				padding: 10px 10px 0 10px
+				max-width: 160px
+			+r(639)
+				padding: 10px 10px 7px 10px
+				margin: 5px 5px
+			&:not(:last-child)
+				margin-right: 50px
+				+r(1023)
+					margin-right: 30px
+				+r(767)
+					margin-right: 10px
+				+r(639)
+					margin-right: 5px
+			position: relative
+			z-index: 0
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 235px
+				background-color: #a8bdd2
+				z-index: -1
+				+r(767)
+					height: 208px
+				+r(639)
+					height: 100%
+	&__btn
+		max-width: 280px
+		display: block
+		margin: 38px auto 0
+		+r(1023)
+			margin-top: 20px
+		+r(767)
+			margin-top: 10px
+.percent
+	&--color2
+		color: #ed8026
+	&--color3
+		color: #81a413
+
+
+.statistics-content-box
+	&--ml1
+		position: relative
+		margin-left: -31px
+	&--ml2
+		position: relative
+		margin-left: -17px
+		+r(479)
+			margin-left: 0

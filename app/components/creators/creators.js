@@ -17,7 +17,7 @@ $(function () {
     // var maxHeight = getMaxCardHeight();
     // $body.css('min-height', $(window).outerWidth() > 479 ? maxHeight : activeHeight);
     var activeHeight = $cards.filter('.' + ACTIVE_CLASS_NAME).outerHeight();
-    console.log(activeHeight)
+
 
     $body.css('min-height', activeHeight);
   };
