@@ -1,0 +1,248 @@
+.order {
+    padding-top: 91px;
+    padding-bottom: 95px;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 74px
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        counter-reset: section
+    }
+
+
+    .item {
+        width: 370px;
+        max-width: 100%;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 54px;
+            height: 54px;
+            background-color: #81a413;
+            font-size: 30px;
+            font-weight: 700;
+            color: #fff;
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, .05);
+            border: 6px solid #fff;
+            right: 91px;
+            top: -15px;
+            border-radius: 50%
+        }
+
+        .img-wrap {
+            position: relative;
+            z-index: -1;
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                right: -53px;
+                top: 111px;
+                background-image: url(../img/order-line.png);
+                width: 84px;
+                height: 7px;
+            }
+        }
+
+
+
+        &__photo {
+            max-width: 100%;
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 15px #eff2f8;
+            margin-bottom: 33px
+        }
+
+        &__ttl {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 1.18;
+            color: #222;
+            margin-bottom: 10px
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 1.33;
+            color: #444
+        }
+    }
+
+
+
+    &__result {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.27;
+        color: #444
+    }
+
+    .dash {
+        margin-bottom: 45px
+    }
+}
+
+
+
+
+@media screen and (max-width: 1199px) {
+    .order {
+        &__title {
+            margin-bottom: 45px
+        }
+
+        .item {
+            .img-wrap {
+                &::after {
+                    transform: scale(.7);
+                    right: -42px
+                }
+            }
+
+            &__photo {
+                margin-bottom: 23px
+            }
+
+            &__ttl {
+                margin-bottom: 6px
+            }
+        }
+
+
+
+        .dash {
+            margin-bottom: 35px
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1023px) {
+    .order {
+        .item {
+            margin-right: 10px;
+            width: 210px;
+            margin-left: 10px;
+
+            .img-wrap::after {
+                content: none;
+            }
+
+
+            &__text {
+                br {
+                    display: none;
+                }
+            }
+
+            &::before {
+                right: 21px;
+                top: -25px
+            }
+
+            &__photo {
+                box-shadow: 0 0 0 10px #eff2f8;
+                width: auto;
+                height: auto
+            }
+
+            &__ttl {
+                font-size: 20px
+            }
+
+            &__text {
+                font-size: 17px
+            }
+        }
+
+        &__title {
+            margin-bottom: 35px
+        }
+
+
+        &__result {
+            font-size: 20px
+        }
+    }
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .order {
+        &__content {
+            flex-wrap: wrap;
+            justify-content: space-around
+        }
+
+        .item:not(:last-of-type) {
+            margin-bottom: 20px
+        }
+
+        .item__photo {
+            margin-bottom: 17px
+        }
+
+        &__result {
+            font-size: 17px
+        }
+
+        .dash {
+            margin-bottom: 25px
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 639px) {
+    .order {
+        .item {
+            width: 235px
+        }
+
+        .item:not(:last-of-type) {
+            margin-bottom: 35px
+        }
+
+        .item__ttl {
+            font-size: 19px;
+            margin-bottom: 3px
+        }
+
+        .item__text {
+            font-size: 17px;
+            line-height: 1.2
+        }
+
+        &__result {
+            font-size: 17px
+        }
+
+        .dash {
+            margin-bottom: 15px
+        }
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+    .order {
+        .item__photo {
+            height: 210px
+        }
+    }
+}

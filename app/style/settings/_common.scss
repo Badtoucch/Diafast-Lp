@@ -3,8 +3,18 @@ body {
   font-size: 18px;
   color: #444;
   background-color: #fff;
+  padding-bottom: 90px;
+  @include r(1023) {
+    padding-bottom: 70px;
+  }
+
   @include r(479) {
+    padding-bottom: 118px;
     margin-top: 0 !important;
+  }
+
+  @include r(479) {
+    padding-bottom: 122px;
   }
 }
 
@@ -185,16 +195,23 @@ a:hover {
   font-size: 16px;
   font-weight: 400;
 }
+
+.accent-color {
+  color: $accent-color;
+}
+
 .orange{
 	color: #ed8026
 }
 
 .leaves{
-	background: url(../img/leaves-left.png) no-repeat 0 -90px, url(../img/leaves-right.png) no-repeat 100% 46px, linear-gradient(to left, #bfd0e2 0%, #f6f7f9 50%, #bfd0e2 100%);
+  background: url(../img/leaves-left.png) no-repeat 0 -90px, url(../img/leaves-right.png) no-repeat 100% 46px, linear-gradient(to left, #bfd0e2 0%, #f6f7f9 50%, #bfd0e2 100%);
+
 	@include r(767) {
     background: linear-gradient(to left, #bfd0e2 0%, #f6f7f9 50%, #bfd0e2 100%);
   }
 }
+
 .color--red{
 	color: #ff3333
 }
