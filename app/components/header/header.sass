@@ -1,16 +1,30 @@
 .header
-	padding: 20px
+	padding: 20px 0
 	background: #fff
+	+r(1239)
+		padding: 15px 0
+	+r(1023)
+		padding: 10px
 	&-content
 		display: flex
 		
 		align-items: center
+		+r(479)
+			justify-content: center
 	&__subtitle
 		color: #666666
 		font-size: 14px
 		font-weight: 400
 		line-height: 16px
 		margin-left: 20px
+		+r(1239)
+			margin-left: 10px
+			max-width: 215px
+			font-size: 13px
+			br
+				display: none
+		+r(767)
+			display: none
 	&__btn
 		max-width: 140px
 		border-radius: 50px
@@ -19,13 +33,46 @@
 		box-shadow: 0 3px 0 #79971a;
 		font-weight: 500
 		margin-left: auto
+		+r(479)
+			display: none
 	&-list
 		display: flex
 		align-items: center
 		margin-left: 50px
+		+r(1239)
+			margin-left: 12px
+		+r(1023)
+			display: none
 		&__item
+			display: flex
+			align-items: center
+			&--padding
+				padding-left: 37px
+				+r(1239)
+					padding-left: 20px
+			&:not(:last-child)
+				padding-right: 40px
+				border-right: 1px solid rgba(0,0 ,0 ,.15 )
+				+r(1239)
+					padding-right: 20px
+			&:hover 
+				.header-list__icon
+					fill: #ed8026
+		&__text
 			font-size: 17px
 			color: #333
+			margin-left: 13px
+			border-bottom: 2px dashed rgba(0,0 ,0 ,.6 )
+			line-height: 1
+			transition: 0.2s
+			+r(1239)
+				font-size: 15px
+			&:hover
+				color: #000
+				border-bottom: 2px dashed transparent
+		&__icon
+			fill: #81a413
+
 
 .logo
 	color: #000000
@@ -34,3 +81,4 @@
 	line-height: 1
 	text-transform: uppercase
 	letter-spacing: 1.75px
+

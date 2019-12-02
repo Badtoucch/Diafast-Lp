@@ -1,0 +1,273 @@
+.disease
+	padding-bottom: 175px
+	+r(1239)
+		padding-bottom: 60px
+	+r(1023)
+		padding-bottom: 40px
+	+r(767)
+		padding-bottom: 30px
+	+r(479)
+		padding-bottom: 25px
+	&__title
+		&::before
+			content: '2'
+	&__subtitle
+		margin-top: 68px
+		position: relative
+		color: #000000
+		font-family: Roboto
+		font-size: 24px
+		font-weight: 500
+		line-height: 28px
+		padding: 50px 10px 23px
+		text-align: center
+		border-radius: 5px
+		background-color: #eef1f5
+		+r(1239)
+			margin-top: 55px
+			font-size: 23px
+			padding: 45px 10px 20px
+		+r(1023)
+			margin-top: 50px
+			font-size: 20px
+			line-height: normal
+			padding: 30px 10px 15px
+		+r(767)
+			margin-top: 30px
+			font-size: 19px
+			padding: 25px 10px 15px
+		+r(639)
+			margin-top: 25px
+			font-size: 18px
+			padding-bottom: 10px
+			br
+				display: none
+		&::before
+			content: ''
+			position: absolute
+			top: -38px
+			left: 50%
+			transform: translateX(-50%)
+			background: url(../img/voz.png) no-repeat center
+			width: 85px
+			height: 81px
+			+r(1239)
+				width: 80px
+				height: 77px
+				background-size: contain
+			+r(1023)
+				width: 65px
+				height: 61px
+			+r(767)
+				width: 50px
+				height: 46px
+				top: -21px
+			+r(639)
+				width: 42px
+				height: 38px
+
+	&-slider
+		margin-top: 50px
+		position: relative
+		padding-bottom: 59px
+		border-bottom: 2px solid #fc6363
+		+r(1239)
+			margin-top: 25px
+			padding-bottom: 30px
+		+r(1023)
+			margin-top: 20px
+			padding-bottom: 25px
+		+r(767)
+			margin-top: 15px	
+			padding-bottom: 20px
+		&::before
+			content: ''
+			position: absolute
+			bottom: -12px
+			left: 50%
+			transform: translateX(-50%) rotate(-38deg) skew(15deg)
+			background: #fff
+			width: 20px
+			height: 20px
+			border-bottom: 2px solid #fc6363
+			border-left: 2px solid #fc6363
+	&-box
+		display: flex
+		flex-direction: column
+		align-items: center
+		&__img
+			padding: 10px
+			box-shadow: 0 0 15px rgba(36, 66, 137, 0.1)
+			border-radius: 10px
+			background-color: #ffffff
+			+r(1239)
+				box-shadow: 0 0 8px rgba(36, 66, 137, 0.1)
+			+r(1023)
+				padding: 5px
+				box-shadow: 0 0 4px rgba(36, 66, 137, 0.1)
+			+r(479)
+				max-width: 360px
+				margin: 0 auto
+		&__title
+			color: #000000
+			font-family: Roboto
+			font-size: 22px
+			font-weight: 500
+			line-height: 1
+			text-align: center
+			margin-top: 18px
+			+r(1239)
+				font-size: 21px
+				margin-top: 15px
+			+r(1023)
+				font-size: 19px
+				margin-top: 10px
+			+r(767)
+				font-size: 18px
+				margin-top: 8px
+			+r(639)
+				font-size: 17px
+	&__why
+		margin-top: 25px
+		color: #000000
+		font-size: 24px
+		font-weight: 500
+		line-height: 30px
+		text-align: center
+		+r(1239)
+			margin-top: 20px
+			font-size: 23px
+			line-height: 29px
+		+r(1023)
+			font-size: 20px
+			line-height: normal
+		+r(767)
+			font-size: 19px
+		+r(639)
+			font-size: 18px
+			br
+				display: none
+	&__note
+		padding-top: 100px
+		margin-top: 42px
+		color: #ee4545
+		font-size: 25px
+		font-weight: 700
+		line-height: 30px
+		position: relative
+		text-align: center
+		+r(1239)
+			font-size: 23px
+			padding-top: 80px
+			line-height: 28px
+			margin-top: 25px
+		+r(1023)
+			font-size: 20px
+			padding-top: 70px
+			line-height: normal
+			margin-top: 20px
+		+r(767)
+			font-size: 19px
+			margin-top: 18px
+			padding-top: 50px
+		+r(639)
+			font-size: 18px
+			margin-top: 15px
+			br
+				display: none
+		&::before
+			content: '!'
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			width: 80px
+			height: 80px
+			border: 3px solid #a8bdd2
+			background-color: #fff
+			border-radius: 50%
+			display: flex
+			justify-content: center
+			align-items: center
+			color: #fc6363
+			font-size: 60px
+			font-weight: 500
+			line-height: 1
+			+r(1239)
+				font-size: 54px
+				width: 70px
+				height: 70px
+			+r(1023)
+				font-size: 46px
+				width: 60px
+				height: 60px
+			+r(767)
+				width: 40px
+				height: 40px
+				font-size: 40px
+.slick-slide
+	margin: 0 15px
+	+r(1239)
+		margin: 0 10px
+	+r(1023)
+		margin: 0 5px
+.slick-slider
+	margin-left: -15px
+	margin-right: -15px
+	+r(1239)
+		margin-left: -10px
+		margin-right: -10px
+	+r(1023)
+		margin-left: -5px
+		margin-right: -5px
+
+.arrow-left, .arrow-right
+	fill: #a8bdd2
+	position: absolute
+	top: 50%
+	transform: translateY(-270%)
+	transition: 0.3s
+	cursor: pointer
+	+r(1330)
+		position: static
+		top: 0
+		transform: none
+	&:hover, &:focus, &:active
+		fill: #82a312
+.arrow-left
+	left: -95px
+	+r(1400)
+		left: -70px
+.arrow-right
+	right: -95px
+	+r(1400)
+		right: -70px
+.slick-dots li button
+	width: 24px
+	height: 24px
+	background-color: #a8bdd2
+	border: 6px solid #fff
+	border-radius: 50%
+	cursor: pointer
+	transition: 0.3s
+	&:hover
+		background-color: #82a312
+.slick-dots
+	position: static
+	margin-top: 23px
+	+r(1239)
+		margin-top: 20px
+	+r(1023)
+		margin-top: 15px
+.slick-dots li.slick-active button
+	width: 24px
+	height: 24px
+	background-color: #82a312
+	box-shadow: 0 0 15px rgba(36, 66, 137, 0.1)
+	border: 5px solid #fff
+.arrow-container
+	margin-top: -24px
+	display: flex
+	justify-content: space-between
+	+r(479)
+		display: none
