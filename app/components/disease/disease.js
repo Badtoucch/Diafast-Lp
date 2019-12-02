@@ -4,8 +4,8 @@ $(".disease-content").slick({
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 3,
-  nextArrow: ".arrow-left",
-	prevArrow: ".arrow-right",
+  nextArrow: ".arrow-right",
+	prevArrow: ".arrow-left",
 	autoplay: true,
   autoplaySpeed: 5000,
   responsive: [
