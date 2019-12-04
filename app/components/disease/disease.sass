@@ -1,5 +1,5 @@
 .disease
-	padding-bottom: 175px
+	padding-bottom: 100px
 	+r(1239)
 		padding-bottom: 60px
 	+r(1023)
@@ -67,18 +67,18 @@
 				height: 38px
 
 	&-slider
-		margin-top: 50px
+		margin-top: 40px
 		position: relative
-		padding-bottom: 59px
+		padding-bottom: 40px
 		border-bottom: 2px solid #fc6363
 		+r(1239)
-			margin-top: 25px
+			margin-top: 15px
 			padding-bottom: 30px
 		+r(1023)
-			margin-top: 20px
+			margin-top: 10px
 			padding-bottom: 25px
 		+r(767)
-			margin-top: 15px	
+			margin-top: 5px	
 			padding-bottom: 20px
 		&::before
 			content: ''
@@ -92,6 +92,7 @@
 			border-bottom: 2px solid #fc6363
 			border-left: 2px solid #fc6363
 	&-box
+		margin-top: 10px !important
 		display: flex
 		flex-direction: column
 		align-items: center
@@ -156,25 +157,32 @@
 		line-height: 30px
 		position: relative
 		text-align: center
+		padding-bottom: 73px
+		border-bottom: 1px solid #eee
 		+r(1239)
 			font-size: 23px
 			padding-top: 80px
 			line-height: 28px
 			margin-top: 25px
+			padding-bottom: 60px
 		+r(1023)
 			font-size: 20px
 			padding-top: 70px
 			line-height: normal
 			margin-top: 20px
+			padding-bottom: 40px
 		+r(767)
 			font-size: 19px
 			margin-top: 18px
 			padding-top: 50px
+			padding-bottom: 30px
 		+r(639)
 			font-size: 18px
 			margin-top: 15px
 			br
 				display: none
+		+r(479)
+			padding-bottom: 25px
 		&::before
 			content: '!'
 			position: absolute
@@ -224,8 +232,7 @@
 .arrow-left, .arrow-right
 	fill: #a8bdd2
 	position: absolute
-	top: 50%
-	transform: translateY(-270%)
+	top: 0
 	transition: 0.3s
 	cursor: pointer
 	+r(1330)
@@ -272,7 +279,11 @@
 	z-index: 4
 	display: flex
 	justify-content: space-between
+	position: absolute
+	top: 154px
+	width: 100%
 	+r(1400)
 		position: relative
+		top: 0
 	+r(479)
 		display: none

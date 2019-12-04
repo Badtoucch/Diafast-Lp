@@ -8,25 +8,13 @@
     overflow: hidden;
 
     &:before {
-        content: '';
-        position: absolute;
         top: 53px;
-        left: 0px;
-        background: url(../img/leaves-left.png );
-        width: 601px;
-        height: 584px;
-        z-index: -1;
+  
     }
 
     &:after {
-        content: '';
-        position: absolute;
-        right: 0px;
         top: 187px;
-        background: url(../img/leaves-right.png );
-        width: 481px;
-        height: 490px;
-        z-index: -1;
+    
     }
 
     &__subtitle {

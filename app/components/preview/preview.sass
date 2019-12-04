@@ -19,6 +19,8 @@
 		max-width: 384px
 		margin-right: 50px
 		width: 100%
+		position: relative
+		margin-top: -5px
 		+r(1239)
 			margin-right: 30px
 			max-width: 335px
@@ -27,6 +29,7 @@
 			order: 1
 			margin-bottom: 15px
 			margin-right: 0
+			margin-top: 0
 	&__title
 		text-align: left
 		font-weight: 900
@@ -284,6 +287,7 @@
 		width: 100%
 		padding-left: 52px
 		height: 58px
+		padding-top: 4px
 		padding-right: 10px
 		transition: 0.2s
 		&:hover, &:focus
@@ -305,6 +309,10 @@
 		align-items: center
 		margin-top: 20px
 		justify-content: center
+		+r(1239)
+			margin-bottom: 20px
+		+r(1023)
+			margin-bottom: 0
 		&:before
 			margin-right: 14px
 			content: ''

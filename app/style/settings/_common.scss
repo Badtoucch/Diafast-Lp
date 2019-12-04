@@ -221,14 +221,46 @@ a:hover {
 }
 
 .leaves {
-  background: url(../img/leaves-left.png) no-repeat 0 -90px,
-    url(../img/leaves-right.png) no-repeat 100% 46px,
-    linear-gradient(to left, #bfd0e2 0%, #f6f7f9 50%, #bfd0e2 100%);
-
-  @include r(767) {
-    background: linear-gradient(to left, #bfd0e2 0%, #f6f7f9 50%, #bfd0e2 100%);
-  }
+  background: linear-gradient(to left, #bfd0e2 0%, #f6f7f9 50%, #bfd0e2 100%);
+		
+		z-index: 0;
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			top: -110px;
+			left: 0;
+			background:	url(../img/leaves-left.png) no-repeat center;
+			width: 584px;
+			height: 601px;
+			z-index: 1;
+			@include r(2500) {
+				left: 50%;
+				transform: translateX(-215%);
+			}
+	
+		}
+		&::after{
+			content: '';
+			position: absolute;
+			top: 46px;
+			right: 0;
+			background:	url(../img/leaves-right.png) no-repeat center;
+			width: 481px;
+			height: 490px;
+			z-index: 1;
+			@include r(2500) {
+				right: 50%;
+				transform: translateX(258%);
+			}
+	
+		}
+		.container{
+			z-index: 2;
+		}
 }
+
+
 
 .color--red {
   color: #ff3333;

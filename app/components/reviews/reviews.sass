@@ -1,7 +1,7 @@
 .reviews
-	padding: 95px 0
+	padding: 95px 0 120px
 	+r(1239)
-		padding: 60px 0
+		padding: 60px 0 80px
 	&-slider
 		position: relative
 		padding-bottom: 120px
@@ -23,7 +23,7 @@
 			padding-bottom: 25px
 			margin-bottom: 25px
 	&-text
-		margin-top: 89px
+		margin-top: 44px
 		+r(1239)
 			margin-top: 30px
 		+r(1023)
@@ -105,6 +105,7 @@
 			max-height: 381px
 			overflow: hidden
 			transition: 0.3s
+			position: relative
 			+r(767)
 				max-height: 300px
 		&__btn
@@ -274,19 +275,21 @@
 	&-video
 		position: relative
 		margin-top: 60px
-		padding-top: 60px
+		padding-top: 50px
 		border-top: 1px solid rgba(168, 189, 210, 0.5)
+		.arrow-left, .arrow-right
+			transform: translateY(-50%)
 		+r(1239)
-			padding-top: 50px
+			padding-top: 40px
 			margin-top: 50px
 		+r(1023)
-			padding-top: 30px
+			padding-top: 20px
 			margin-top: 30px
 		+r(767)
-			padding-top: 20px
+			padding-top: 10px
 			margin-top: 20px
 		+r(479)
-			padding-top: 15px
+			padding-top: 5px
 			margin-top: 15px
 		&-youtube
 			max-width: 370px
@@ -380,8 +383,20 @@ iframe
 
 
 
+.reviews-video-box
+	margin-top: 10px !important
 
-
+.shadow
+	position: absolute
+	width: 100%
+	height: 150px
+	bottom: 0px
+	left: 0
+	opacity: 1
+	-webkit-transition: opacity 1s
+	-o-transition: opacity 1s
+	transition: opacity 1s
+	background-image: linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0) 100%)
 
 
 
@@ -404,5 +419,11 @@ iframe
 		background-color: #81a413
 		&:before
 			opacity: 0
+	.shadow
+		opacity: 0
+
 .un-btn
 	display: none
+.audiojs .time strong
+	padding: 0px 1px 0px 2px
+	font-weight: normal

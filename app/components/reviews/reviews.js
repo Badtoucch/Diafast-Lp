@@ -47,7 +47,7 @@ $(".video-slider").slick({
   slidesToShow: 3,
   slidesToScroll: 3,
 	arrows: true,
-	dots: true,
+	dots: false,
   nextArrow: ".arrow-right-video",
 	prevArrow: ".arrow-left-video",
   responsive: [
@@ -55,7 +55,8 @@ $(".video-slider").slick({
       breakpoint: 1024,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+				slidesToScroll: 2,
+				dots: true
       }
     },
     {

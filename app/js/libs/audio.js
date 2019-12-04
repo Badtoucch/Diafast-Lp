@@ -52,7 +52,7 @@
       })(),
       createPlayer: {
         markup:
-          '          <div class="play-pause">             <p class="play"></p>             <p class="pause"></p>             <p class="loading"></p>             <p class="error"></p>           </div>           <div class="scrubber">             <div class="progress"></div>             <div class="loaded"></div>           </div>           <div class="time">             <em class="played">00:00</em>/<strong class="duration">01:00</strong>           </div>           <div class="error-message"></div>',
+          '          <div class="play-pause">             <p class="play"></p>             <p class="pause"></p>             <p class="loading"></p>             <p class="error"></p>           </div>           <div class="scrubber">             <div class="progress"></div>             <div class="loaded"></div>           </div>           <div class="time">             <em class="played">00:00</em>/<strong class="duration">00:00</strong>           </div>           <div class="error-message"></div>',
         playPauseClass: "play-pause",
         scrubberClass: "scrubber",
         progressClass: "progress",
@@ -95,10 +95,10 @@
         var b = this.settings.createPlayer,
           a = j(b.durationClass, this.wrapper),
           c = Math.floor(this.duration / 60),
-          d = Math.floor(this.duration % 60);
+					d = Math.floor(this.duration % 60);
         g[h].helpers.removeClass(this.wrapper, b.loadingClass);
         a.innerHTML = (c < 10 ? "0" : "") + c + ":" + (d < 10 ? "0" : "") + d;
-      },
+			},
       loadProgress: function(b) {
         var a = this.settings.createPlayer,
           c = j(a.scrubberClass, this.wrapper);
@@ -531,27 +531,32 @@
 audiojs.events.ready(function() {
   audiojs.createAll();
 });
-"use strict";
+("use strict");
 
 function youtubeShowVideo() {
-    var i, c, y, v, n;
-    v = document.getElementsByClassName("youtube");
-    for (n = 0; n < v.length; n++) {
-        y = v[n];
-        i = document.createElement("img");
-        i.setAttribute("src", "http://i.ytimg.com/vi/" + y.id + "/hqdefault.jpg");
-        i.setAttribute("class", "thumb");
-        c = document.createElement("div");
-        c.setAttribute("class", "play");
-        y.appendChild(i);
-        y.appendChild(c);
-        y.onclick = function () {
-            var a = document.createElement("iframe");
-            a.setAttribute("src", "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1&border=0&wmode=opaque&enablejsapi=1");
-            a.style.width = this.style.width;
-            a.style.height = this.style.height;
-            this.parentNode.replaceChild(a, this);
-        };
-    }
+  var i, c, y, v, n;
+  v = document.getElementsByClassName("youtube");
+  for (n = 0; n < v.length; n++) {
+    y = v[n];
+    i = document.createElement("img");
+    i.setAttribute("src", "http://i.ytimg.com/vi/" + y.id + "/hqdefault.jpg");
+    i.setAttribute("class", "thumb");
+    c = document.createElement("div");
+    c.setAttribute("class", "play");
+    y.appendChild(i);
+    y.appendChild(c);
+    y.onclick = function() {
+      var a = document.createElement("iframe");
+      a.setAttribute(
+        "src",
+        "https://www.youtube.com/embed/" +
+          this.id +
+          "?autoplay=1&autohide=1&border=0&wmode=opaque&enablejsapi=1"
+      );
+      a.style.width = this.style.width;
+      a.style.height = this.style.height;
+      this.parentNode.replaceChild(a, this);
+    };
+  }
 }
 youtubeShowVideo();
