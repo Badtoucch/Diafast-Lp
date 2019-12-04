@@ -1,6 +1,5 @@
 .creator-card {
   display: flex;
-  align-items: flex-start;
 }
 
 .creator-card__portrait {
@@ -17,9 +16,17 @@
 }
 
 .creator-card__text {
+  display: flex;
+  flex: 0 1 840px;
+  flex-direction: column;
+  justify-content: space-between;
   color: #444444;
   font-size: 18px;
   line-height: (30 / 18);
+}
+
+.creator-card__paragraph--md {
+  max-width: 750px;
 }
 
 .creator-card__paragraph br {
