@@ -41,6 +41,7 @@
 
 .ever-popup__inner {
     padding-top: 0 !important;
+    width: 940px !important;
 }
 
 .ever-popup__close:after, .ever-popup__close:before {
@@ -70,6 +71,10 @@
             display: none;
          }
         
+    }
+
+    .ever-popup__inner {
+        width: 270px !important;
     }
 
     .ever-popup__close {

@@ -3,19 +3,11 @@ body {
   font-size: 18px;
   color: #444;
   background-color: #fff;
-  padding-bottom: 90px;
-  @include r(1023) {
-    padding-bottom: 70px;
-  }
 
   @include r(479) {
-    padding-bottom: 118px;
     margin-top: 0 !important;
   }
 
-  @include r(479) {
-    padding-bottom: 122px;
-  }
 }
 
 html,
@@ -122,6 +114,10 @@ b {
 
 .nowrap {
   white-space: nowrap;
+}
+
+.diaf {
+  letter-spacing: 2px;
 }
 
 select:-moz-focusring,

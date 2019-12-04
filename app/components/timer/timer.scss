@@ -17,6 +17,16 @@
         align-items: center;
     }
 
+    .btndiv {
+        display: flex;
+        flex-direction: column;
+        .order-snos {
+            display: flex;
+            justify-content: center;
+            margin-top: 4px;
+            font-size: 13px;
+        }
+    }
 
     &__prod {
         position: relative;
