@@ -10,7 +10,7 @@ body {
 }
 
 * {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 html,
@@ -255,7 +255,7 @@ a:hover {
     width: 584px;
     height: 601px;
     z-index: 0;
-  
+
     @include r(767) {
       left: 50%;
       transform: translateX(-132%);
@@ -269,9 +269,9 @@ a:hover {
     background: url(../img/leaves-right.png) no-repeat center;
     width: 481px;
     height: 490px;
-    z-index: 1;
- 
-		@include r(767) {
+    z-index: -1;
+
+    @include r(767) {
       right: 50%;
       transform: translateX(132%);
     }
@@ -284,4 +284,9 @@ a:hover {
 .color--red {
   color: #ff3333;
   letter-spacing: -0.1px;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .disease-slider::before, .sign-content::before {
+    transform: translateX(-50%) rotate(-37deg) skew(15deg) !important;
+  }
 }
