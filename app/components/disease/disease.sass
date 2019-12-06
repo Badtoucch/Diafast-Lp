@@ -69,7 +69,7 @@
 	&-slider
 		margin-top: 40px
 		position: relative
-		padding-bottom: 40px
+		padding-bottom: 60px
 		border-bottom: 2px solid #fc6363
 		+r(1239)
 			margin-top: 15px
@@ -236,8 +236,10 @@
 	transition: 0.3s
 	cursor: pointer
 	+r(1330)
-		position: static
-		top: 0
+		position: relative
+		right: auto !important
+		left: auto !important
+		top: -24px
 		transform: none
 	&:hover, &:focus, &:active
 		fill: #82a312
@@ -255,6 +257,7 @@
 	background-color: #a8bdd2
 	border: 6px solid #fff
 	border-radius: 50%
+	background-clip: padding-box;
 	cursor: pointer
 	transition: 0.3s
 	&:hover
@@ -282,8 +285,12 @@
 	position: absolute
 	top: 154px
 	width: 100%
-	+r(1400)
+	+r(1330)
 		position: relative
 		top: 0
+		z-index: 5
+		margin-top: 0
+		justify-content: space-around
+		margin-bottom: -24px
 	+r(479)
 		display: none

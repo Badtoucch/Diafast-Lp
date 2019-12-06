@@ -35,6 +35,7 @@
 			bottom: auto
 			margin-top: 24px
 			margin-right: -15px
+			order: 3
 		+r(639)
 			margin-right: -54px
 		&::before
@@ -66,10 +67,19 @@
 		+r(1239)
 			max-width: 100%
 		+r(1023)
-			width: 100%
+			width: 49%
 			text-align: center
+			padding-right: 24px
+			order: 2
 		+r(767)
 			font-size: 18px
+			padding-right: 0px
+			position: relative
+			right: -18px
+		+r(639)
+			right: 0
+			order: 1
+			width: 100%
 	&-timer
 		max-width: 385px
 		margin-left: 18px
@@ -78,8 +88,22 @@
 			margin-top: 10px
 			margin-left: 0
 		+r(1023)
-			width: 100%
+			width: 49%
 			justify-content: center
+			order: 1
+			flex-direction: column
+			padding-left: 88px
+		+r(767)
+			padding-left: 25px
+		+r(639)
+			width: 100%
+			order: 2
+			padding-left: 0
+		.timerr__title
+			margin-right: 0
+			margin-bottom: 5px
+			br
+				display: none
 	&-form
 		width: 100%
 		display: flex
@@ -94,6 +118,9 @@
 			max-width: 240px
 			margin-left: 0
 			margin-right: 0
+			order: 4
+		+r(767)
+			margin-top: 0
 		+r(639)
 			margin-top: 15px
 
@@ -136,6 +163,9 @@
 		line-height: 18px
 		margin-right: 18px
 		letter-spacing: -0.342px
+		max-width: 132px
+		+r(1023)
+			max-width: 100%
 		+r(479)
 			width: 100%
 			text-align: center

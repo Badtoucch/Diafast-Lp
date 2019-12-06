@@ -3,18 +3,9 @@ body {
   font-size: 18px;
   color: #444;
   background-color: #fff;
-  padding-bottom: 90px;
-  @include r(1023) {
-    padding-bottom: 70px;
-  }
 
   @include r(479) {
-    padding-bottom: 118px;
     margin-top: 0 !important;
-  }
-
-  @include r(479) {
-    padding-bottom: 122px;
   }
 }
 
@@ -49,7 +40,7 @@ button {
 
   @include r(1023) {
     max-width: 768px;
-    padding: 0 10px;
+    padding: 0 15px;
   }
 
   @include r(767) {
@@ -72,19 +63,19 @@ button {
   color: #000;
   text-align: center;
   &--bg {
-		position: relative;
-		z-index: 0;
+    position: relative;
+    z-index: 0;
     &::before {
-			content: '';
+      content: "";
       position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -45%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -45%);
       width: 102%;
       height: 91%;
       border-radius: 5px;
-			background-color: #c9d7e6;
-			z-index: -1;
+      background-color: #c9d7e6;
+      z-index: -1;
     }
   }
 
@@ -124,6 +115,10 @@ b {
   white-space: nowrap;
 }
 
+.diaf {
+  letter-spacing: 2px;
+}
+
 select:-moz-focusring,
 a:-moz-focusring {
   color: transparent;
@@ -159,12 +154,14 @@ a:hover {
   text-align: center;
   border-radius: 5px;
   background-color: #ffffff;
+
   background-image: linear-gradient(
     to right,
     #81a413 0%,
     #9abf25 51%,
     #81a413 100%
   );
+  background-color: #79971a;
   font-size: 27px;
   font-weight: 900;
   color: #fff;
@@ -181,9 +178,29 @@ a:hover {
     display: block;
   }
   &:hover {
+    background-image: linear-gradient(
+      to right,
+      #8cb115 0%,
+      #aad128 51%,
+      #92b815 100%
+    );
+    box-shadow: 0px 5px 0px #8aac1e;
+  }
+  &:focus,
+  &:active {
     box-shadow: none;
   }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .btn {
+    &:focus,
+    &:active {
+      box-shadow: 0px 5px 0px rgba(0, 0, 0, 0);
+    }
+  }
+}
+
 ::-webkit-input-placeholder {
   color: rgba(102, 102, 102, 0.67);
   font-family: "Roboto";
@@ -222,46 +239,51 @@ a:hover {
 
 .leaves {
   background: linear-gradient(to left, #bfd0e2 0%, #f6f7f9 50%, #bfd0e2 100%);
-		
-		z-index: 0;
-		position: relative;
-		&::before{
-			content: '';
-			position: absolute;
-			top: -110px;
-			left: 0;
-			background:	url(../img/leaves-left.png) no-repeat center;
-			width: 584px;
-			height: 601px;
-			z-index: 1;
-			@include r(2500) {
-				left: 50%;
-				transform: translateX(-215%);
-			}
-	
+
+  z-index: 0;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -110px;
+    left: 0;
+    background: url(../img/leaves-left.png) no-repeat center;
+    width: 584px;
+    height: 601px;
+    z-index: 0;
+    @include r(2500) {
+      left: 50%;
+      transform: translateX(-215%);
+    }
+    @include r(767) {
+      left: 50%;
+      transform: translateX(-132%);
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 46px;
+    right: 0;
+    background: url(../img/leaves-right.png) no-repeat center;
+    width: 481px;
+    height: 490px;
+    z-index: 1;
+    @include r(2500) {
+      right: 50%;
+      transform: translateX(258%);
 		}
-		&::after{
-			content: '';
-			position: absolute;
-			top: 46px;
-			right: 0;
-			background:	url(../img/leaves-right.png) no-repeat center;
-			width: 481px;
-			height: 490px;
-			z-index: 1;
-			@include r(2500) {
-				right: 50%;
-				transform: translateX(258%);
-			}
-	
-		}
-		.container{
-			z-index: 2;
-		}
+		@include r(767) {
+      right: 50%;
+      transform: translateX(132%);
+    }
+  }
+  .container {
+    z-index: 2;
+  }
 }
-
-
 
 .color--red {
   color: #ff3333;
+  letter-spacing: -0.1px;
 }
