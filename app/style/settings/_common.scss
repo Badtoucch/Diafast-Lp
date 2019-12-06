@@ -255,10 +255,7 @@ a:hover {
     width: 584px;
     height: 601px;
     z-index: 0;
-    @include r(2500) {
-      left: 50%;
-      transform: translateX(-215%);
-    }
+  
     @include r(767) {
       left: 50%;
       transform: translateX(-132%);
@@ -273,10 +270,7 @@ a:hover {
     width: 481px;
     height: 490px;
     z-index: 1;
-    @include r(2500) {
-      right: 50%;
-      transform: translateX(258%);
-		}
+ 
 		@include r(767) {
       right: 50%;
       transform: translateX(132%);

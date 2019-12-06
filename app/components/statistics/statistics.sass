@@ -1,5 +1,5 @@
 .statistics
-	padding: 88px 0
+	padding: 83px 0
 	&::before
 		top: 305px
 	&::after
@@ -176,6 +176,7 @@
 			margin-top: 30px
 		+r(1023)
 			margin-top: 22px
+			flex-wrap: wrap
 		+r(767)
 			margin-top: 18px
 		+r(639)
@@ -192,14 +193,17 @@
 			border-radius: 10px
 			background-color: #ffffff
 			z-index: -1
+			+r(1023)
+				display: none
 			+r(767)
 				height: 158px
 			+r(639)
 				display: none
 		&__item
 			padding: 15px 15px 0 15px
+			+r(1023)
+				padding: 10px 10px 7px 10px
 			+r(767)
-				padding: 10px 10px 0 10px
 				max-width: 160px
 			+r(639)
 				padding: 10px 10px 7px 10px
@@ -223,8 +227,8 @@
 				height: 235px
 				background-color: #a8bdd2
 				z-index: -1
-				+r(767)
-					height: 208px
+				+r(1023)
+					height: 100%
 				+r(639)
 					height: 100%
 	&__btn
