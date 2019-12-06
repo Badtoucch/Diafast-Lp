@@ -63,7 +63,8 @@ $(".video-slider").slick({
       breakpoint: 767,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+				slidesToScroll: 2,
+				dots: true
       }
     },
     {
@@ -71,7 +72,8 @@ $(".video-slider").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-				adaptiveHeight: true
+				adaptiveHeight: true,
+				dots: true
       }
     }
   ]
