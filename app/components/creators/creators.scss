@@ -10,7 +10,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .creators__select {
@@ -18,30 +18,35 @@
   display: block;
   flex: 0 0 390px;
   margin: 0;
-  padding: 0 30px;
   color: #666666;
   font-size: 22px;
-  line-height: 56px;
-  background: white;
-  border: 2px solid;
-  border-color: #a8bdd2;
-  border-radius: 30px / 50%;
-  overflow: visible;
+  line-height: 60px;
+  text-align: center;
   cursor: pointer;
-  transition-property: color, border-color;
-  transition-duration: $transition-duration;
+}
+
+.creators__select::before,
+.creators__select::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
 }
 
 .creators__select::before {
-  content: "";
-  position: absolute;
-  bottom: -12px;
-  left: 50%;
-  width: 30px;
-  height: 12px;
+  height: 60px;
+  background-image: url("../img/creators-select.svg");
+  opacity: 1;
+}
+
+.creators__select::after {
+  height: 70px;
+  background-image: url("../img/creators-select-active.svg");
   opacity: 0;
-  background-image: url("../img/creator-select-arrow.png");
-  transition: opacity $transition-duration;
 }
 
 .creators__select + * {
@@ -49,18 +54,16 @@
 }
 
 .creators__select.active {
-  margin-bottom: 23px;
   color: black;
   font-weight: 600;
   border-color: #82a312;
 }
 
-.creators__select:hover {
-  color: black;
-  border-color: #82a312;
+.creators__select.active::before {
+  opacity: 0;
 }
 
-.creators__select.active::before {
+.creators__select.active::after {
   opacity: 1;
 }
 
@@ -97,8 +100,24 @@
   }
 
   .creators__select {
-    flex-basis: 320px;
-    font-size: 20px;
+    flex-basis: 250px;
+    font-size: 18px;
+    background: white;
+    border: 2px solid;
+    border-color: #a8bdd2;
+    border-radius: 30px / 50%;
+    transition-property: color, border-color;
+    transition-duration: $transition-duration;
+  }
+
+  .creators__select::before,
+  .creators__select::after {
+    content: none;
+  }
+
+  .creators__select:hover {
+    color: black;
+    border-color: #82a312;
   }
 
   .creators__body {
@@ -116,19 +135,6 @@
 
   .creators__title .accent-color {
     white-space: nowrap;
-  }
-
-  .creators__select {
-    flex-basis: 250px;
-    font-size: 18px;
-  }
-
-  .creators__select.active {
-    margin-bottom: 0;
-  }
-
-  .creators__select.active::before {
-    content: none;
   }
 }
 
