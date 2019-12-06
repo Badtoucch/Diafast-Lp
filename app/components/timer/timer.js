@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $(window).on("scroll", function () {
        
-        if (($(window).scrollTop() > 800) && ($(window).scrollTop() < 10500)) {
+        if (($(window).scrollTop() > $('.sign-info').offset().top) && ($(window).scrollTop() < $('.order').offset().top)) {
             $(".timer").fadeIn();
             
         } else {
