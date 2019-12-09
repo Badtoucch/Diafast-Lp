@@ -254,7 +254,7 @@ a:hover {
     background: url(../img/leaves-left.png) no-repeat center;
     width: 584px;
     height: 601px;
-    z-index: 0;
+    z-index: -1;
 
     @include r(767) {
       left: 50%;

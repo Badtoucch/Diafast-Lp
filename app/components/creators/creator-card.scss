@@ -1,6 +1,5 @@
 .creator-card {
   display: flex;
-  align-items: flex-start;
 }
 
 .creator-card__portrait {
@@ -29,7 +28,8 @@
   justify-content: space-between;
   color: #444444;
   font-size: 18px;
-  line-height: (30 / 18);
+	line-height: (30 / 18);
+	height: inherit;
 }
 
 .creator-card__paragraph--md {
