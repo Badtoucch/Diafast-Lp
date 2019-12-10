@@ -1,13 +1,13 @@
 .action
 	padding-bottom: 83px
 	+r(1239)
-		padding-bottom: 60px
+		padding-bottom: 80px
 	+r(1023)
-		padding-bottom: 40px
+		padding-bottom: 60px
 	+r(767)
-		padding-bottom: 30px
+		padding-bottom: 62px
 	+r(479)
-		padding-bottom: 25px
+		padding-bottom: 52px
 	&-content
 		max-width: 773px
 		margin-left: auto
@@ -20,6 +20,9 @@
 		text-align: left
 		+r(1023)
 			text-align: center
+			padding-bottom: 15px
+		+r(639)
+			padding-bottom: 0
 	&-pack
 		position: absolute
 		bottom: -8px
@@ -51,6 +54,8 @@
 				top: -18px
 				right: 42px
 				width: 81px
+			+r(479)
+				right: 50px
 	&-text
 		margin-top: 25px
 		display: flex
@@ -154,6 +159,20 @@
 				margin-bottom: 15px
 				width: 100%
 	&-btn
+		position: relative
+		&::before
+			content: '*при оформлении заказа'
+			font-size: 15px
+			color: #1f1f1f
+			opacity: .7
+			text-align: center
+			position: absolute
+			bottom: -30px
+			font-weight: 400
+			left: 50%
+			transform: translateX(-50%)
+			width: 100%
+			line-height: 1
 		+r(1239)
 			padding: 3px 15px
 		+r(1023)

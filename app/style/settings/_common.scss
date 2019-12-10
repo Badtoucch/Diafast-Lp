@@ -154,11 +154,11 @@ a:hover {
 }
 
 .btn {
+  margin-bottom: 5px;
   padding: 9px 15px 9px;
   text-align: center;
   border-radius: 5px;
   background-color: #ffffff;
-
   background-image: linear-gradient(
     to right,
     #81a413 0%,
@@ -286,7 +286,8 @@ a:hover {
   letter-spacing: -0.1px;
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .disease-slider::before, .sign-content::before {
+  .disease-slider::before,
+  .sign-content::before {
     transform: translateX(-50%) rotate(-37deg) skew(15deg) !important;
   }
 }
