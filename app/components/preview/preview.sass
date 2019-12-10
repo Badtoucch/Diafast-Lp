@@ -188,6 +188,40 @@
 				position: relative
 				z-index: -1
 				order: 2
+				&::before
+					content: ''
+					position: absolute
+					background: url(../img/approved.png) no-repeat center /contain
+					width: 107px
+					height: 76px
+					background-size: contain
+					bottom: -20px
+					left: -17px
+					z-index: 2
+					+r(767)
+						width: 90px
+						bottom: -10px
+						left: -9px
+					+r(479)
+						display: none
+				&::after
+					content: ''
+					position: absolute
+					background: url(../img/recommended.png) no-repeat center /contain
+					width: 107px
+					height: 76px
+					background-size: contain
+					top: -20px
+					right: 87px
+					z-index: 2
+					+r(767)
+						right: 40px
+						width: 90px
+						height: 65px
+					+r(639)
+						width: 62px
+					+r(479)
+						display: none
 			+r(767)
 				margin-right: 20px
 			+r(639)

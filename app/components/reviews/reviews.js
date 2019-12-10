@@ -78,3 +78,7 @@ $(".video-slider").slick({
     }
   ]
 });
+ var audios = document.getElementsByTagName('audio');
+audiojs.events.ready(function() {
+  audiojs.createAll();
+});
