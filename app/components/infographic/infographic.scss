@@ -3,6 +3,12 @@
   padding-bottom: 83px;
   z-index: 0;
   position: relative;
+  .order-snos {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+    font-size: 15px;
+}
 
   .container {
     padding-bottom: 35px;
@@ -45,8 +51,8 @@
     max-width: 1085px;
     margin: auto;
     position: relative;
-    background: url(../img/graph.png) 64px 93px no-repeat;
-    background-size: 965px;
+    background: url(../img/graph.png) 66px 94px no-repeat;
+    background-size: 963px;
 
     &::before {
       content: "";
@@ -221,6 +227,9 @@
 
 @media screen and (max-width: 1239px) {
   .infographic {
+    .order-snos {
+      margin-top: 25px;
+  }
     .container {
       padding-bottom: 18px;
     }
@@ -311,8 +320,8 @@
     }
 
     &__content {
-      background: url(../img/graph.png) 55px 79px no-repeat;
-      background-size: 84.8%;
+      background: url(../img/graph.png) 55px 84px no-repeat;
+    background-size: 624px;
 
       margin-bottom: 18px;
 
