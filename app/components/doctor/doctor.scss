@@ -5,7 +5,12 @@
     position: relative;
     z-index: 1;
     padding: 83px 0px;
-
+    .order-snos {
+        display: flex;
+        margin-top: 8px;
+    margin-left: 150px;
+    font-size: 15px;
+    }
     &:before {
         top: 113px;
     }
@@ -129,6 +134,11 @@
             &-sm {
                 display: none;
             }
+        }
+
+        .order-snos {
+            justify-content: center;
+            margin-left: 0;
         }
 
         .container {
