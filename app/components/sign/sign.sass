@@ -138,8 +138,12 @@
 			border-radius: 50%
 			background-repeat: no-repeat
 			background-position: center
-			background-size: contain
-			transition: 0.3s
+			background-size: 100%
+			transition: background-size 0.2s  ease-in
+			-moz-transition: background-size 0.2s  ease-in
+			-ms-transition: background-size 0.2s  ease-in
+			-o-transition: background-size 0.2s  ease-in
+			-webkit-transition: background-size 0.2s  ease-in
 			+r(1239)
 				max-width: 200px
 				height: 200px
@@ -167,9 +171,14 @@
 					top: 8px
 					right: 8px
 			&:hover
-				transform: scale(1.05)
+				background-size: 105%
+				transition: background-size 0.2s ease-in
+				-moz-transition: background-size 0.2s  
+				-ms-transition: background-size 0.2s 
+				-o-transition: background-size 0.2s 
+				-webkit-transition: background-size 0.2s 
 				+r(1023)
-					transform: none
+					background-size: contain
 		&__text
 			margin-top: 14px
 			text-align: center
