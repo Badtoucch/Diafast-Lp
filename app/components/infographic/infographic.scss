@@ -236,47 +236,56 @@
 @media screen and (min-width:1240px) {
   .infographic {
     &__content {
-      .col__check {
-      
+      .col {
+
         &--1 {
           &:hover {
-            margin-bottom: 80px;
+            .col__check--1 {
+              margin-bottom: 80px;
+            }
+            
           }
         }
   
         &--2 {
           &:hover {
-            margin-bottom: 108px;
+            .col__check--2 {
+            margin-bottom: 108px;}
           } 
         }
   
         &--3 {
           &:hover {
-            margin-bottom: 151px;
+            .col__check--3 {
+            margin-bottom: 151px;}
           }
         }
   
         &--4 {
           &:hover {
-            margin-bottom: 192px;
+            .col__check--4 {
+            margin-bottom: 192px;}
           }
         }
   
         &--5 {
           &:hover {
-            margin-bottom: 243px;
+            .col__check--5 {
+            margin-bottom: 243px;}
           }
         }
   
         &--6 {
           &:hover {
-            margin-bottom: 281px;
+            .col__check--6 {
+            margin-bottom: 281px;}
           }
         }
   
         &--7 {
           &:hover {
-            margin-bottom: 327px;
+            .col__check--7 {
+            margin-bottom: 327px;}
           }
         }
       }
@@ -288,47 +297,61 @@
 @media screen and (min-width:1024px) and (max-width:1239px){
   .infographic {
     &__content {
-      .col__check {
+      .col {
    
         &--1 {
           &:hover {
+            .col__check--1 {
             margin-bottom: 80px;
+            }
           }
         }
   
         &--2 {
           &:hover {
+            .col__check--2 {
             margin-bottom: 115px;
+            }
           } 
         }
   
         &--3 {
           &:hover {
+            .col__check--3 {
             margin-bottom: 151px;
+            }
           }
         }
   
         &--4 {
           &:hover {
+            .col__check--4 {
             margin-bottom: 191px;
+            }
           }
         }
   
         &--5 {
           &:hover {
+            .col__check--5 {
             margin-bottom: 233px;
+            }
           }
         }
   
         &--6 {
           &:hover {
+            .col__check--6 {
             margin-bottom: 263px;
+            }
           }
         }
   
         &--7 {
           &:hover {
+            .col__check--7 {
             margin-bottom: 308px;
+            }
           }
         }
       }

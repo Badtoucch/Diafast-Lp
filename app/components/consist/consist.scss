@@ -56,6 +56,10 @@
         z-index: 3
     }
 
+    &__rec.mob {
+        display: none;
+    }
+
     &__row {
         width: 100%;
         display: flex;
@@ -265,18 +269,33 @@
         &__prod {
             top: 110px;
             width: 380px;
-            right: 67%;
+            right: 60%;
         }
 
         &__cert {
             width: 165px;
             top: 25px;
-            right: 72%;
+            right: 63%;
         }
 
         &__rec {
+            display: none;
             bottom: 30%;
-            right: 22%;
+            right: 24%;
+        }
+
+        &__rec.mob {
+            display: block;
+        }
+
+        &__rec.mob.one {
+            bottom: 49%;
+            right: 25%;
+        }
+
+        &__rec.mob.two {
+            bottom: 13%;
+            right: 23%;
         }
 
         &__item {
@@ -300,6 +319,22 @@
 
         &:after {
             content: none;
+        }
+
+        &__prod {
+            right: 62%;
+        }
+
+        &__cert {
+            right: 65%;
+        }
+
+        &__rec.mob.one {
+            right: 21%;
+        }
+
+        &__rec.mob.two {
+            right: 19%;
         }
 
         &__des {
@@ -333,8 +368,13 @@
         }
 
         &__rec {
+            display: block;
             bottom: 0;
             right: 52%;
+        }
+ 
+        &__rec.mob {
+            display: none;
         }
 
         &__row {
