@@ -224,7 +224,11 @@
     }
   }
 }
-
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+	.infographic__content{
+		background-size: 966px;
+	}
+}
 @media screen and (max-width: 1239px) {
   .infographic {
     .order-snos {

@@ -22,6 +22,9 @@
 			align-items: center
 			padding: 0 60px
 			position: relative
+			&:hover
+				.sign-info__text::before
+					width: 55px
 			+r(1239)
 				padding: 0 30px
 			+r(1023)
@@ -62,6 +65,7 @@
 				width: 35px
 				height: 4px
 				background-color: #f0931e
+				transition: 0.3s
 				+r(1023)
 					top: -15px
 					height: 3px
@@ -128,10 +132,20 @@
 				max-width: 220px
 		&__img
 			position: relative
+			width: 100%
+			max-width: 220px
+			height: 220px
+			border-radius: 50%
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+			transition: 0.3s
 			+r(1239)
 				max-width: 200px
+				height: 200px
 			+r(1023)
 				max-width: 170px
+				height: 170px
 			&:before
 				counter-increment: sign-list
 				content: counter(sign-list)
@@ -152,8 +166,12 @@
 				+r(1023)
 					top: 8px
 					right: 8px
+			&:hover
+				transform: scale(1.05)
+				+r(1023)
+					transform: none
 		&__text
-			margin-top: 10px
+			margin-top: 14px
 			text-align: center
 			color: #000000
 			font-size: 22px
@@ -191,3 +209,15 @@
 			&:after
 				transform: translateY(-350%) scaleY(1)
 
+.sign1
+	background-image: url(../img/sign1.png)
+.sign2
+	background-image: url(../img/sign2.png)
+.sign3
+	background-image: url(../img/sign3.png)
+.sign4
+	background-image: url(../img/sign4.png)
+.sign5
+	background-image: url(../img/sign5.png)
+.sign6
+	background-image: url(../img/sign6.png)

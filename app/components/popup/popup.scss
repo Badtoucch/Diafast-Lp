@@ -15,7 +15,8 @@
 
     &__img {
         position: relative;
-        padding-top: 190px;
+				padding-top: 190px;
+				margin-right: -20px;
 
         &__pack {
             position: relative;
@@ -35,9 +36,11 @@
 
         &__medal {
             position: absolute;
-            left: 40px;
+            left: 10px;
             top: 130px;
-            z-index: 51;
+						z-index: 51;
+						width: 88px;
+						height: 88px;
         }
     }
 }

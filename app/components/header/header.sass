@@ -59,10 +59,8 @@
 				border-right: 1px solid rgba(0,0 ,0 ,.15 )
 				+r(1239)
 					padding-right: 20px
-			&:hover 
-				.header-list__icon
-					fill: #ed8026
 		&__text
+			order: 1
 			font-size: 17px
 			color: #333
 			margin-left: 13px
@@ -74,6 +72,8 @@
 			&:hover
 				color: #000
 				border-bottom: 2px dashed transparent
+				+ .header-list__icon
+					fill: #ed8026
 		&__icon
 			fill: #81a413
 

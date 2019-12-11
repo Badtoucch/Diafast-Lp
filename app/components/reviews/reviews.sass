@@ -47,6 +47,9 @@
 				padding-left: 15px
 				padding-right: 15px
 				padding-bottom: 25px
+			+r(639)
+				margin-bottom: 3px
+				padding-bottom: 15px
 		&__avatar
 			display: block
 			position: relative
@@ -108,6 +111,8 @@
 			position: relative
 			+r(767)
 				max-height: 300px
+			+r(639)
+				max-height: 100%
 		&__btn
 			position: absolute
 			bottom: -18px
@@ -119,6 +124,8 @@
 			background-color: #ed8026
 			cursor: pointer
 			transition: 0.3s
+			+r(639)
+				display: none
 			&:before, &::after
 				content: ''
 				position: absolute
@@ -139,12 +146,15 @@
 	.arrow-container
 		top: 330px
 		+r(1330)
-			top: 0
-			position: static
-	.slick-track
-	.arrow-container
-		+r(639)
-			display: none
+			top: 50px
+			position: absolute
+			justify-content: space-between
+			padding: 0 20px
+		+r(1239)
+			padding: 0 15px
+		+r(479)
+			display: flex
+			padding: 0 10px
 	&-audio
 		display: flex
 		justify-content: center
@@ -177,6 +187,10 @@
 				padding-left: 30px
 			+r(1023)
 				font-size: 17px
+	.arrow-left, .arrow-right
+		+r(1330)
+			bottom: auto
+			top: 0
 .audiojs
 	max-width: 377px
 	box-shadow: none
@@ -190,6 +204,7 @@
 	.audiojs audio 
 		position: absolute
 		left: -1px
+
 
 .audiojs, .loaded, .play-pause, .progress, .scrubber
 	background-color: transparent
@@ -401,6 +416,8 @@ iframe
 	-o-transition: opacity 1s
 	transition: opacity 1s
 	background-image: linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0) 100%)
+	+r(639)
+		display: none
 
 
 
