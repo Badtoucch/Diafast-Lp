@@ -32,11 +32,11 @@
 		border-radius: 50px
 		font-size: 18px
 		padding: 9px 0 
-		box-shadow: 0 3px 0 #79971a;
+		box-shadow: 0 3px 0 #79971a
 		font-weight: 500
 		margin-left: auto
 		&:hover
-			box-shadow: 0 3px 0 #8aac1e;
+			box-shadow: 0 3px 0 #8aac1e
 		+r(479)
 			display: none
 	&-list
@@ -59,23 +59,35 @@
 				border-right: 1px solid rgba(0,0 ,0 ,.15 )
 				+r(1239)
 					padding-right: 20px
+		&__a 
+			display: flex
+			align-items: center
+			&:hover
+				.header-list__icon
+					fill: #ed8026
+			&:hover
+				.header-list__text
+					color: #000
+					border-bottom: 2px dashed transparent
+					
+
+
+			
 		&__text
 			order: 1
 			font-size: 17px
 			color: #333
-			margin-left: 13px
 			border-bottom: 2px dashed rgba(0,0 ,0 ,.6 )
 			line-height: 1
+			margin-left: 13px
 			transition: 0.2s
 			+r(1239)
 				font-size: 15px
-			&:hover
-				color: #000
-				border-bottom: 2px dashed transparent
-				+ .header-list__icon
-					fill: #ed8026
+
 		&__icon
 			fill: #81a413
+
+					
 
 
 .logo

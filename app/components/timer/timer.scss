@@ -232,20 +232,20 @@
 
         &__prod {
             
-            // &__sale {
-            //     display: none;
-            // }
+            &__sale {
+                display: none;
+            }
 
-            // span {
-            //     display: none;
-            // }
+            span {
+                display: none;
+            }
         }
 
         &__until {
     
             width: 135px;
-            margin-right: 0;
-            margin-left: 0;
+            margin-right: 12px;
+            margin-left: -7px;
 
 
         }
@@ -270,19 +270,24 @@
 
         &__prod {
             margin-right: 0;
-
-
-              
+            display: none;
         }
 
         &__until {
-            width: 125px;
+            width: 100%;
             margin-right: 0px;
-            margin-left: 10px;
+            margin-left: 0px;
+            &::after {
+                content: '!';
+                margin-left: -3px;
+            }
+            .red {
+                display: none;
+            }
         }
 
         .btn {
-            margin-top: 11px;
+            margin-top: 8px;
         }
 
        

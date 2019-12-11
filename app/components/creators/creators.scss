@@ -105,6 +105,7 @@
     background: white;
     border: 2px solid;
     border-color: #a8bdd2;
+    line-height: 54px;
     border-radius: 30px / 50%;
     transition-property: color, border-color;
     transition-duration: $transition-duration;
@@ -144,6 +145,7 @@
     font-size: 16px;
     flex-basis: 210px;
     border-radius: 25px / 50%;
+    line-height: 46px;
   }
 
   .creators__select + .creators__select {
@@ -164,12 +166,12 @@
 
   .creators__select {
     width: 100%;
-    max-width: 200px;
-    flex-basis: 60px;
+    max-width: 260px;
+    flex-basis: 50px;
   }
 
   .creators__select + .creators__select {
     margin: 0;
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
